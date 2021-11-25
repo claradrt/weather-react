@@ -1,4 +1,4 @@
-import "./style.css";
+import "./App.css";
 import Section1 from "./Section1";
 import Github from "./Github";
 
