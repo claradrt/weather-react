@@ -1,0 +1,62 @@
+.section1 {
+  padding: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+#current-location-wrapper {
+  text-align: center;
+}
+
+#current-location {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+#current-location:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#location-icon {
+  padding: 5px;
+}
+
+.current-temperature {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -20px;
+}
+
+.weather-info-wrapper {
+  align-items: baseline;
+}
+
+.current-weather {
+  width: fit-content;
+  text-align: center;
+}
+
+.current-weather-metrics {
+  text-align: right;
+}
+
+#current-weather-icon {
+  width: 100px;
+}
+
+#current-weather-description {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+.local-date {
+  text-align: center;
+  margin: 45px auto;
+}
