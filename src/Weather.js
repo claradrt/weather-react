@@ -1,11 +1,11 @@
 import React from "react";
 import Search from "./Search.js";
 
-import "./Section1.css";
+import "./Weather.css";
 
-export default function Section1() {
+export default function Weather() {
   return (
-    <section className="section1">
+    <section className="Weather">
       <Search />
       <h1 id="city-name">Madrid</h1>
       <div id="current-location-wrapper">
