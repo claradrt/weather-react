@@ -5,7 +5,7 @@ export default function Github() {
     <div id="github-link">
       <i className="fab fa-github"></i>
       <a
-        href="https://github.com/claradrt/weather-app"
+        href="https://github.com/claradrt/weather-react"
         target="_blank"
         rel="noreferrer"
       >
