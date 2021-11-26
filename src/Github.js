@@ -10,7 +10,7 @@ export default function Github() {
         rel="noreferrer"
       >
         Open source code
-      </a>
+      </a>{" "}
       by Clara Dérot
     </div>
   );
