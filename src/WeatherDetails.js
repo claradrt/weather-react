@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import FormattedDate from "./FormattedDate.js";
+import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function WeatherDetails(props) {
   const [weatherData, setWeatherData] = useState({});
@@ -41,12 +42,7 @@ export default function WeatherDetails(props) {
           <span id="my-location">My location</span>
         </div>
       </div>
-      <div className="current-temperature">
-        <h2 id="current-temperature">
-          {weatherData.temp}
-          <span className="units">ºC</span>
-        </h2>
-      </div>
+      <WeatherTemperature celsius={weatherData.temp} />
       <div className="row weather-info-wrapper">
         <div className="col-6">
           <div className="right-col">

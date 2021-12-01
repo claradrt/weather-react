@@ -33,6 +33,10 @@
   top: -20px;
 }
 
+.units strong {
+  font-size: 22px;
+}
+
 .weather-info-wrapper {
   align-items: baseline;
 }
