@@ -70,7 +70,7 @@ export default function WeatherDetails(props) {
         </div>
       </div>
       <div className="local-date">
-        <FormattedDate date={weatherData.date} />
+        {weatherData.date && <FormattedDate date={weatherData.date} />}
       </div>
       <hr />
     </div>
