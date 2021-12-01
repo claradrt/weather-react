@@ -28,7 +28,7 @@ export default function WeatherTemperature(props) {
       </div>
     );
   } else {
-    let fahrenheitTemp = (props.celsius * 9) / 5 + 32;
+    let fahrenheitTemp = Math.round((props.celsius * 9) / 5 + 32);
     return (
       <div className="current-temperature">
         <h2 id="current-temperature">
