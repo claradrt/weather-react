@@ -38,12 +38,6 @@ export default function WeatherDetails(props) {
       <h1 id="city-name">
         {props.city}, {weatherData.country}
       </h1>
-      <div id="current-location-wrapper">
-        <div id="current-location">
-          <i className="fas fa-map-marker-alt" id="location-icon"></i>
-          <span id="my-location">My location</span>
-        </div>
-      </div>
       <WeatherTemperature celsius={weatherData.temp} />
       <div className="row weather-info-wrapper">
         <div className="col-6">
