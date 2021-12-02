@@ -18,14 +18,16 @@ export default function WeatherDetails(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       weather_icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      coord: response.data.coord,
     });
+    props.passCoord(response.data.coord);
   }
 
   if (props.city !== city) {
     //console.log(props.city);
     const apiKey = "030aaa048ccf382ba4335184bb827f63";
     setCity(props.city);
-    console.log("City from If condition in WeatherDetails:", props.city);
+    //console.log("City from If condition in WeatherDetails:", props.city);
     let tempUnit = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${tempUnit}`;
     axios.get(apiUrl).then(handleResponse);
